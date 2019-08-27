@@ -28,6 +28,20 @@
                                               }
                                             ">
   
+    <input  type="button" value="night" onclick="
+                                                 var target = document.querySelector('body');
+                                              if(this.value === 'night') {
+                                                target.style.backgroundColor='black';
+                                                target.style.color='white';
+                                                this.value = 'day';
+                                              }
+                                              else if(this.value === 'day') {
+                                                target.style.backgroundColor='white';
+                                                target.style.color='black';
+                                                this.value = 'night';               
+                                              }
+                                            ">
+  
   
   <h1><a href="index.html"> * 재규 십순 잔치 * </a></h1>
   <h2 style = "color:powderblue; background-color:coral;">2019년 10월 재규어 10살 맞이 축하 파티 개최</h2>
