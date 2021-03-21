@@ -2,7 +2,7 @@
 
 apt update
 service mysql start
-mysql -e "create database wordpress;\
+mysql -e "create database if not exists wordpress;\
 	create user 'ylee'@'localhost' identified by 'password';\
 	grant all privileges on *.* to 'ylee'@'localhost' with grant option;\
 	flush privileges;"
